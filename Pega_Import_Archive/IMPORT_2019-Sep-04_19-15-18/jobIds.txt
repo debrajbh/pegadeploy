@@ -1,4 +1,0 @@
-#SUCCESSFUL JOBS
-#Wed Sep 04 19:15:18 CEST 2019
-PegaProductGitHubImportTest-21.operationName=import
-PegaProductGitHubImportTest-21.jobID=IMPORTREQUEST-18
