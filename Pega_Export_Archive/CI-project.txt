@@ -1,0 +1,23 @@
+Task: Deploy AppTest.java on Tomcat using Jenkins, Maven, Nexus
+
+Set up Maven project
+
+Create ciproject directory in F: drive
+Open DOS prompt and go to F:\ciproject
+Run the below command
+
+Jenkins running on 8080 - http://localhost:8080/      Debraj/Debraj
+Nexus running on 8081 - http://localhost:8081/#browse/welcome
+
+
+https://code-maven.com/jenkins-pipeline-running-external-programs
+
+https://support.sonatype.com/hc/en-us/articles/227256688-How-do-I-configure-the-Nexus-Jenkins-Plugin
+
+https://stackoverflow.com/questions/5784329/how-can-i-make-jenkins-ci-with-git-trigger-on-pushes-to-master
+https://oncomputingwell.princeton.edu/2018/01/triggering-a-jenkins-build-every-time-changes-are-pushed-to-a-git-branch-on-github/
+
+https://stackoverflow.com/questions/11848406/jenkins-how-to-check-out-artifact-from-nexus-and-deploy-on-tomcat
+https://stackoverflow.com/questions/37280818/sonatype-nexus-3-get-latest-snapshot?noredirect=1&lq=1
+
+ARTIFACTS_DIR=D:/Jenkins
