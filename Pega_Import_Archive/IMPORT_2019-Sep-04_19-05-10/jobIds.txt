@@ -1,0 +1,4 @@
+#SUCCESSFUL JOBS
+#Wed Sep 04 19:05:10 CEST 2019
+PegaProductImportTest-23.jobID=IMPORTREQUEST-17
+PegaProductImportTest-23.operationName=import
