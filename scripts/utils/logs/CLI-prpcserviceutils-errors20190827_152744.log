@@ -1,0 +1,1 @@
+2019-08-27 15:28:16.455 [pool-2-thread-1] ERROR [egarules.serviceclient.rest.RestResponse] - PegaProductExportTest-7: Error while executing request 1 using URL http://192.168.198.1:8085/prweb/PRRestService/SystemManagement/v2/Export  HTTP/1.1 500 

@@ -1,0 +1,194 @@
+Buildfile: F:\EAZD\scripts\utils\prpcserviceutilsWrapper.xml
+     [echo] *** JVM Arguments -XX:MaxHeapSize=1280m -XX:MaxMetaspaceSize=512m ***
+
+-init:
+     [echo] ******************************************************************
+     [echo] Build date : ${pegaBuildDate.value} 
+     [echo] Pega7 platform version : ${specificationVersion.value} 
+     [echo] ******************************************************************
+   [delete] Deleting directory F:\EAZD\scripts\utils\generated
+    [mkdir] Created dir: F:\EAZD\scripts\utils\generated
+[pega:propertyparser] Reading Properties from: F:\EAZD\scripts\utils/prpcServiceUtils.properties
+[pega:propertyparser] getstatus.jobID=
+[pega:propertyparser] hotfix.async=true
+[pega:propertyparser] expose.includeDescendents=true
+[pega:propertyparser] export.async=true
+[pega:propertyparser] expose.async=true
+[pega:propertyparser] expose.excludedClasses=
+[pega:propertyparser] import.commitRate=100
+[pega:propertyparser] export.productName=
+[pega:propertyparser] export.branchAppContext=
+[pega:propertyparser] expose.commitRate=100
+[pega:propertyparser] import.existingInstances=skip
+[pega:propertyparser] user.temp.dir=C:/pega_temp
+[pega:propertyparser] expose.reindex=true
+[pega:propertyparser] hotfix.operation=
+[pega:propertyparser] expose.excludeDescendents=true
+[pega:propertyparser] updateAccessGroup.applicationName=
+[pega:propertyparser] import.nofailonerror=false
+[pega:propertyparser] pega.rest.proxy.password=*****
+[pega:propertyparser] import.codesetVersion=06-01-01
+[pega:propertyparser] export.applicationVersion=
+[pega:propertyparser] pega.rest.proxy.username=
+[pega:propertyparser] expose.includedClasses=
+[pega:propertyparser] rollback.action=SystemRollback
+[pega:propertyparser] pega.rest.server.url=http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+[pega:propertyparser] updateAccessGroup.applicationVersion=
+[pega:propertyparser] expose.startKey=
+[pega:propertyparser] expose.reindexType=nonpega
+[pega:propertyparser] import.codesetName=Customer
+[pega:propertyparser] manageRestorePoints.restorePointLabel=
+[pega:propertyparser] import.async=true
+[pega:propertyparser] pega.rest.password=*****
+[pega:propertyparser] hotfix.force=false
+[pega:propertyparser] import.compileLibraries=true
+[pega:propertyparser] rollback.restorePointName=
+[pega:propertyparser] import.allowImportWithMissingDependencies=false
+[pega:propertyparser] export.productVersion=
+[pega:propertyparser] pega.rest.username=
+[pega:propertyparser] rollback.async=true
+[pega:propertyparser] export.branchName=
+[pega:propertyparser] getstatus.operationName=
+[pega:propertyparser] expose.endDate=
+[pega:propertyparser] import.preserveOrder=true
+[pega:propertyparser] rollback.downloadLogToFile=true
+[pega:propertyparser] pega.rest.proxy.port=
+[pega:propertyparser] pega.rest.proxy.workstation=
+[pega:propertyparser] expose.endKey=
+[pega:propertyparser] hotfix.dlFilePath=
+[pega:propertyparser] import.archive.path=
+[pega:propertyparser] updateAccessGroup.groupList=
+[pega:propertyparser] manageRestorePoints.restorePointName=
+[pega:propertyparser] export.archiveName=
+[pega:propertyparser] import.mode=import
+[pega:propertyparser] expose.startDate=
+[pega:propertyparser] hotfix.bypassSchema=false
+[pega:propertyparser] manageTrackedData.operation=
+[pega:propertyparser] expose.numOfThreads=1
+[pega:propertyparser] hotfix.catalogPath=
+[pega:propertyparser] manageRestorePoints.action=
+[pega:propertyparser] import.skipBackup=false
+[pega:propertyparser] pega.rest.proxy.domain=
+[pega:propertyparser] export.applicationName=
+[pega:propertyparser] pega.rest.response.type=json
+[pega:propertyparser] pega.rest.proxy.host=
+    [mkdir] Created dir: C:\windows\TEMP\PegaInstallTemp-27-August-2019-15.27.45
+[pega:hasenoughspace] Found 62300044KB of free space on 'C:\windows\TEMP\'
+
+-processInstances:
+     [echo] Performing export on multiple instance(s)
+[pega:echoargline] arg line : -action export -propFileDir F:\EAZD\scripts\utils/generated -poolSize ${prpcserviceutils.pool.size} -requestTimeOut ${prpcserviceutils.request.timeout} -tempDir C:\windows\TEMP\/PegaInstallTemp-27-August-2019-15.27.45 -artifactsDir F:\EAZD
+     [echo] Reading connection information from D:\Jenkins\workspace\PegaProductExportTest\PegaProductExportTest-7_export.properties
+[pega:propertyfilegenerator] pega.rest.server.url=http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+[pega:propertyfilegenerator] pega.rest.username=
+[pega:propertyfilegenerator] pega.rest.password=*****
+[pega:propertyfilegenerator] pega.rest.proxy.host=
+[pega:propertyfilegenerator] pega.rest.proxy.port=
+[pega:propertyfilegenerator] pega.rest.proxy.username=
+[pega:propertyfilegenerator] pega.rest.proxy.password=*****
+[pega:propertyfilegenerator] pega.rest.proxy.domain=
+[pega:propertyfilegenerator] pega.rest.proxy.workstation=
+[pega:propertyfilegenerator] pega.rest.response.type=json
+[pega:propertyfilegenerator] user.temp.dir=C:/pega_temp
+[pega:propertyfilegenerator] export.archiveName=
+[pega:propertyfilegenerator] export.productName=
+[pega:propertyfilegenerator] export.productVersion=
+[pega:propertyfilegenerator] export.applicationVersion=
+[pega:propertyfilegenerator] export.applicationName=
+[pega:propertyfilegenerator] export.branchName=
+[pega:propertyfilegenerator] export.branchAppContext=
+[pega:propertyfilegenerator] export.async=true
+[pega:propertyfilegenerator] expose.includedClasses=
+[pega:propertyfilegenerator] expose.includeDescendents=true
+[pega:propertyfilegenerator] expose.excludedClasses=
+[pega:propertyfilegenerator] expose.excludeDescendents=true
+[pega:propertyfilegenerator] expose.startKey=
+[pega:propertyfilegenerator] expose.endKey=
+[pega:propertyfilegenerator] expose.startDate=
+[pega:propertyfilegenerator] expose.endDate=
+[pega:propertyfilegenerator] expose.reindex=true
+[pega:propertyfilegenerator] expose.reindexType=nonpega
+[pega:propertyfilegenerator] expose.commitRate=100
+[pega:propertyfilegenerator] expose.numOfThreads=1
+[pega:propertyfilegenerator] expose.async=true
+[pega:propertyfilegenerator] import.archive.path=
+[pega:propertyfilegenerator] import.mode=import
+[pega:propertyfilegenerator] import.existingInstances=skip
+[pega:propertyfilegenerator] import.nofailonerror=false
+[pega:propertyfilegenerator] import.commitRate=100
+[pega:propertyfilegenerator] import.compileLibraries=true
+[pega:propertyfilegenerator] import.allowImportWithMissingDependencies=false
+[pega:propertyfilegenerator] import.preserveOrder=true
+[pega:propertyfilegenerator] import.codesetName=Customer
+[pega:propertyfilegenerator] import.codesetVersion=06-01-01
+[pega:propertyfilegenerator] import.async=true
+[pega:propertyfilegenerator] import.skipBackup=false
+[pega:propertyfilegenerator] manageTrackedData.operation=
+[pega:propertyfilegenerator] hotfix.operation=
+[pega:propertyfilegenerator] hotfix.dlFilePath=
+[pega:propertyfilegenerator] hotfix.catalogPath=
+[pega:propertyfilegenerator] hotfix.bypassSchema=false
+[pega:propertyfilegenerator] hotfix.force=false
+[pega:propertyfilegenerator] hotfix.async=true
+[pega:propertyfilegenerator] getstatus.jobID=
+[pega:propertyfilegenerator] getstatus.operationName=
+[pega:propertyfilegenerator] manageRestorePoints.action=
+[pega:propertyfilegenerator] manageRestorePoints.restorePointName=
+[pega:propertyfilegenerator] manageRestorePoints.restorePointLabel=
+[pega:propertyfilegenerator] rollback.restorePointName=
+[pega:propertyfilegenerator] rollback.action=SystemRollback
+[pega:propertyfilegenerator] rollback.async=true
+[pega:propertyfilegenerator] rollback.downloadLogToFile=true
+[pega:propertyfilegenerator] updateAccessGroup.applicationName=
+[pega:propertyfilegenerator] updateAccessGroup.applicationVersion=
+[pega:propertyfilegenerator] updateAccessGroup.groupList=
+[pega:propertyfilegenerator] PegaProductExportTest-7.pega.rest.server.url=http://192.168.198.1:8085/prweb/PRRestService/
+[pega:propertyfilegenerator] PegaProductExportTest-7.pega.rest.username=Debraj
+[pega:propertyfilegenerator] PegaProductExportTest-7.pega.rest.password=*****
+[pega:propertyfilegenerator] PegaProductExportTest-7.export.archiveName=HRTeam20180623.063628
+[pega:propertyfilegenerator] PegaProductExportTest-7.export.productName=HRTeam
+[pega:propertyfilegenerator] PegaProductExportTest-7.export.productVersion=20180623.063628
+[pega:propertyfilegenerator] PegaProductExportTest-7.export.applicationName=
+[pega:propertyfilegenerator] PegaProductExportTest-7.export.applicationVersion=
+[pega:propertyfilegenerator] PegaProductExportTest-7.export.async=false
+[pega:propertyfilegenerator] Systems Configured
+[pega:propertyfilegenerator] PegaProductExportTest-7
+[pega:propertyfilegenerator] Generated F:\EAZD\scripts\utils\generated\PegaProductExportTest-7.prpcServiceUtils.properties
+     [echo] *** JVM Arguments -XX:MaxHeapSize=1280m -XX:MaxMetaspaceSize=512m ***
+
+_callService:
+     [java] 15:27:46.436 [main] INFO  [a.pegarules.serviceclient.ClientSettings] - -action export -propFileDir F:\EAZD\scripts\utils/generated -poolSize ${prpcserviceutils.pool.size} -requestTimeOut ${prpcserviceutils.request.timeout} -tempDir C:\windows\TEMP\/PegaInstallTemp-27-August-2019-15.27.45 -artifactsDir F:\EAZD 
+     [java] 15:27:46.449 [main] INFO  [a.pegarules.serviceclient.ClientSettings] - Setting Thread Pool Size to default 5
+     [java] 15:27:46.449 [main] INFO  [a.pegarules.serviceclient.ClientSettings] - Setting Request TimeOut to default 300
+     [java] 15:27:46.494 [main] INFO  [.pega.pegarules.serviceclient.ClientMain] - Initializing client Current Operation = EXPORT; Thread Pool Size = 5; RequestTimeOut = 300; TemporaryDirectory = C:\windows\TEMP\/PegaInstallTemp-27-August-2019-15.27.45
+     [java] 15:27:46.497 [main] INFO  [viceclient.requestmanager.RequestManager] - Initializing Request Manager
+     [java] 15:27:46.498 [main] INFO  [viceclient.requestmanager.RequestManager] - Initializing ExecutorService with pool size 5 
+     [java] 15:27:46.504 [main] INFO  [viceclient.requestmanager.RequestManager] - Performing EXPORT with params [System Name = PegaProductExportTest-7 Parameters = {hotfix.async=true, expose.includeDescendents=true, getstatus.jobID=, export.async=false, expose.async=true, expose.excludedClasses=, export.productName=HRTeam, import.commitRate=100, export.branchAppContext=, expose.commitRate=100, import.existingInstances=skip, user.temp.dir=C:/pega_temp, expose.reindex=true, hotfix.operation=, expose.excludeDescendents=true, pega.rest.proxy.password=*****, updateAccessGroup.applicationName=, import.nofailonerror=false, export.applicationVersion=, import.codesetVersion=06-01-01, pega.rest.proxy.username=, expose.includedClasses=, rollback.action=SystemRollback, pega.rest.server.url=http://192.168.198.1:8085/prweb/PRRestService/, updateAccessGroup.applicationVersion=, expose.startKey=, expose.reindexType=nonpega, import.codesetName=Customer, manageRestorePoints.restorePointLabel=, pega.rest.password=*****, import.async=true, import.compileLibraries=true, hotfix.force=false, export.productVersion=20180623.063628, rollback.restorePointName=, import.allowImportWithMissingDependencies=false, pega.rest.username=Debraj, rollback.async=true, export.branchName=, getstatus.operationName=, expose.endDate=, import.preserveOrder=true, rollback.downloadLogToFile=true, pega.rest.proxy.port=, pega.rest.proxy.workstation=, expose.endKey=, import.archive.path=, hotfix.dlFilePath=, export.archiveName=HRTeam20180623.063628, manageRestorePoints.restorePointName=, updateAccessGroup.groupList=, import.mode=import, expose.startDate=, expose.numOfThreads=1, manageTrackedData.operation=, hotfix.bypassSchema=false, hotfix.catalogPath=, pega.rest.proxy.domain=, import.skipBackup=false, manageRestorePoints.action=, export.applicationName=, pega.rest.response.type=json, pega.rest.proxy.host=}]
+     [java]  
+     [java] 15:28:16.446 [pool-2-thread-1] INFO  [egarules.serviceclient.rest.RestResponse] - PegaProductExportTest-7: Parsing response
+     [java] 15:28:16.447 [pool-2-thread-1] INFO  [egarules.serviceclient.rest.RestResponse] - PegaProductExportTest-7: Parsing response of length 0
+     [java] 15:28:16.449 [pool-2-thread-1] INFO  [egarules.serviceclient.rest.RestResponse] - PegaProductExportTest-7: Parsing content of type text/html; charset=UTF-8
+     [java] 15:28:16.455 [pool-2-thread-1] ERROR [egarules.serviceclient.rest.RestResponse] - PegaProductExportTest-7: Error while executing request 1 using URL http://192.168.198.1:8085/prweb/PRRestService/SystemManagement/v2/Export  HTTP/1.1 500 
+     [java] 15:28:16.456 [main] INFO  [viceclient.requestmanager.RequestManager] - Request on system PegaProductExportTest-7 failed
+     [java] 
+     [java]                                        FAILED JOBS
+     [java] --------------------------------------------------------------------------------------------
+     [java] 
+     [java] System Name         : PegaProductExportTest-7                                                                             
+     [java] Job ID              :                                                                                                     
+     [java] Status              :                                                                                                     
+     [java] Error Messages      : HTTP/1.1 500                                                                                                                                                                                            
+     [java] --------------------------------------------------------------------------------------------
+     [java] 15:28:16.523 [main] INFO  [viceclient.requestmanager.RequestManager] - Shutting down executor service
+     [java] 15:28:16.523 [main] INFO  [viceclient.requestmanager.RequestManager] - Executor Service shutdown completed
+     [java] Exception in thread "main" Operation EXPORT failed on PegaProductExportTest-7,
+     [java] 	at com.pega.pegarules.serviceclient.ClientMain.executeAndHandleResponse(ClientMain.java:116)
+     [java] 	at com.pega.pegarules.serviceclient.ClientMain.main(ClientMain.java:61)
+
+BUILD FAILED
+F:\EAZD\scripts\utils\prpcserviceutilsWrapper.xml:180: The following error occurred while executing this line:
+F:\EAZD\scripts\utils\prpcserviceutilsWrapper.xml:198: Java returned: 1
+
+Total time: 31 seconds
+Exiting with Error
+

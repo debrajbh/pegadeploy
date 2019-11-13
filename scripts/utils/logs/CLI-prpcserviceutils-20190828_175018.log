@@ -1,0 +1,232 @@
+Buildfile: F:\EAZD\scripts\utils\prpcserviceutilsWrapper.xml
+     [echo] *** JVM Arguments -XX:MaxHeapSize=1280m -XX:MaxMetaspaceSize=512m ***
+
+-init:
+     [echo] ******************************************************************
+     [echo] Build date : ${pegaBuildDate.value} 
+     [echo] Pega7 platform version : ${specificationVersion.value} 
+     [echo] ******************************************************************
+   [delete] Deleting directory F:\EAZD\scripts\utils\generated
+    [mkdir] Created dir: F:\EAZD\scripts\utils\generated
+[pega:propertyparser] Reading Properties from: F:\EAZD\scripts\utils/prpcServiceUtils.properties
+[pega:propertyparser] getstatus.jobID=
+[pega:propertyparser] hotfix.async=true
+[pega:propertyparser] expose.includeDescendents=true
+[pega:propertyparser] export.async=true
+[pega:propertyparser] expose.async=true
+[pega:propertyparser] expose.excludedClasses=
+[pega:propertyparser] import.commitRate=100
+[pega:propertyparser] export.productName=
+[pega:propertyparser] export.branchAppContext=
+[pega:propertyparser] expose.commitRate=100
+[pega:propertyparser] import.existingInstances=skip
+[pega:propertyparser] user.temp.dir=C:/pega_temp
+[pega:propertyparser] expose.reindex=true
+[pega:propertyparser] hotfix.operation=
+[pega:propertyparser] expose.excludeDescendents=true
+[pega:propertyparser] updateAccessGroup.applicationName=
+[pega:propertyparser] import.nofailonerror=false
+[pega:propertyparser] pega.rest.proxy.password=*****
+[pega:propertyparser] import.codesetVersion=06-01-01
+[pega:propertyparser] export.applicationVersion=
+[pega:propertyparser] pega.rest.proxy.username=
+[pega:propertyparser] expose.includedClasses=
+[pega:propertyparser] rollback.action=SystemRollback
+[pega:propertyparser] pega.rest.server.url=http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+[pega:propertyparser] updateAccessGroup.applicationVersion=
+[pega:propertyparser] expose.startKey=
+[pega:propertyparser] expose.reindexType=nonpega
+[pega:propertyparser] import.codesetName=Customer
+[pega:propertyparser] manageRestorePoints.restorePointLabel=
+[pega:propertyparser] import.async=true
+[pega:propertyparser] pega.rest.password=*****
+[pega:propertyparser] hotfix.force=false
+[pega:propertyparser] import.compileLibraries=true
+[pega:propertyparser] rollback.restorePointName=
+[pega:propertyparser] import.allowImportWithMissingDependencies=false
+[pega:propertyparser] export.productVersion=
+[pega:propertyparser] pega.rest.username=
+[pega:propertyparser] rollback.async=true
+[pega:propertyparser] export.branchName=
+[pega:propertyparser] getstatus.operationName=
+[pega:propertyparser] expose.endDate=
+[pega:propertyparser] import.preserveOrder=true
+[pega:propertyparser] rollback.downloadLogToFile=true
+[pega:propertyparser] pega.rest.proxy.port=
+[pega:propertyparser] pega.rest.proxy.workstation=
+[pega:propertyparser] expose.endKey=
+[pega:propertyparser] hotfix.dlFilePath=
+[pega:propertyparser] import.archive.path=
+[pega:propertyparser] updateAccessGroup.groupList=
+[pega:propertyparser] manageRestorePoints.restorePointName=
+[pega:propertyparser] export.archiveName=
+[pega:propertyparser] import.mode=import
+[pega:propertyparser] expose.startDate=
+[pega:propertyparser] hotfix.bypassSchema=false
+[pega:propertyparser] manageTrackedData.operation=
+[pega:propertyparser] expose.numOfThreads=1
+[pega:propertyparser] hotfix.catalogPath=
+[pega:propertyparser] manageRestorePoints.action=
+[pega:propertyparser] import.skipBackup=false
+[pega:propertyparser] pega.rest.proxy.domain=
+[pega:propertyparser] export.applicationName=
+[pega:propertyparser] pega.rest.response.type=json
+[pega:propertyparser] pega.rest.proxy.host=
+    [mkdir] Created dir: C:\windows\TEMP\PegaInstallTemp-28-August-2019-17.50.19
+[pega:hasenoughspace] Found 61701108KB of free space on 'C:\windows\TEMP\'
+
+-processInstances:
+     [echo] Performing import on multiple instance(s)
+[pega:echoargline] arg line : -action import -propFileDir F:\EAZD\scripts\utils/generated -poolSize ${prpcserviceutils.pool.size} -requestTimeOut ${prpcserviceutils.request.timeout} -tempDir C:\windows\TEMP\/PegaInstallTemp-28-August-2019-17.50.19 -artifactsDir D:\Jenkins\workspace\PegaProductGitHubImportTest\PegaProductGitHubImportTest
+     [echo] Reading connection information from D:\Jenkins\workspace\PegaProductGitHubImportTest\PegaProductGitHubImportTest-10_import.properties
+[pega:propertyfilegenerator] pega.rest.server.url=http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+[pega:propertyfilegenerator] pega.rest.username=
+[pega:propertyfilegenerator] pega.rest.password=*****
+[pega:propertyfilegenerator] pega.rest.proxy.host=
+[pega:propertyfilegenerator] pega.rest.proxy.port=
+[pega:propertyfilegenerator] pega.rest.proxy.username=
+[pega:propertyfilegenerator] pega.rest.proxy.password=*****
+[pega:propertyfilegenerator] pega.rest.proxy.domain=
+[pega:propertyfilegenerator] pega.rest.proxy.workstation=
+[pega:propertyfilegenerator] pega.rest.response.type=json
+[pega:propertyfilegenerator] user.temp.dir=C:/pega_temp
+[pega:propertyfilegenerator] export.archiveName=
+[pega:propertyfilegenerator] export.productName=
+[pega:propertyfilegenerator] export.productVersion=
+[pega:propertyfilegenerator] export.applicationVersion=
+[pega:propertyfilegenerator] export.applicationName=
+[pega:propertyfilegenerator] export.branchName=
+[pega:propertyfilegenerator] export.branchAppContext=
+[pega:propertyfilegenerator] export.async=true
+[pega:propertyfilegenerator] expose.includedClasses=
+[pega:propertyfilegenerator] expose.includeDescendents=true
+[pega:propertyfilegenerator] expose.excludedClasses=
+[pega:propertyfilegenerator] expose.excludeDescendents=true
+[pega:propertyfilegenerator] expose.startKey=
+[pega:propertyfilegenerator] expose.endKey=
+[pega:propertyfilegenerator] expose.startDate=
+[pega:propertyfilegenerator] expose.endDate=
+[pega:propertyfilegenerator] expose.reindex=true
+[pega:propertyfilegenerator] expose.reindexType=nonpega
+[pega:propertyfilegenerator] expose.commitRate=100
+[pega:propertyfilegenerator] expose.numOfThreads=1
+[pega:propertyfilegenerator] expose.async=true
+[pega:propertyfilegenerator] import.archive.path=
+[pega:propertyfilegenerator] import.mode=import
+[pega:propertyfilegenerator] import.existingInstances=skip
+[pega:propertyfilegenerator] import.nofailonerror=false
+[pega:propertyfilegenerator] import.commitRate=100
+[pega:propertyfilegenerator] import.compileLibraries=true
+[pega:propertyfilegenerator] import.allowImportWithMissingDependencies=false
+[pega:propertyfilegenerator] import.preserveOrder=true
+[pega:propertyfilegenerator] import.codesetName=Customer
+[pega:propertyfilegenerator] import.codesetVersion=06-01-01
+[pega:propertyfilegenerator] import.async=true
+[pega:propertyfilegenerator] import.skipBackup=false
+[pega:propertyfilegenerator] manageTrackedData.operation=
+[pega:propertyfilegenerator] hotfix.operation=
+[pega:propertyfilegenerator] hotfix.dlFilePath=
+[pega:propertyfilegenerator] hotfix.catalogPath=
+[pega:propertyfilegenerator] hotfix.bypassSchema=false
+[pega:propertyfilegenerator] hotfix.force=false
+[pega:propertyfilegenerator] hotfix.async=true
+[pega:propertyfilegenerator] getstatus.jobID=
+[pega:propertyfilegenerator] getstatus.operationName=
+[pega:propertyfilegenerator] manageRestorePoints.action=
+[pega:propertyfilegenerator] manageRestorePoints.restorePointName=
+[pega:propertyfilegenerator] manageRestorePoints.restorePointLabel=
+[pega:propertyfilegenerator] rollback.restorePointName=
+[pega:propertyfilegenerator] rollback.action=SystemRollback
+[pega:propertyfilegenerator] rollback.async=true
+[pega:propertyfilegenerator] rollback.downloadLogToFile=true
+[pega:propertyfilegenerator] updateAccessGroup.applicationName=
+[pega:propertyfilegenerator] updateAccessGroup.applicationVersion=
+[pega:propertyfilegenerator] updateAccessGroup.groupList=
+[pega:propertyfilegenerator] PegaProductGitHubImportTest-10.pega.rest.server.url=http://192.168.198.1:8085/prweb/PRRestService/
+[pega:propertyfilegenerator] PegaProductGitHubImportTest-10.pega.rest.username=Debraj
+[pega:propertyfilegenerator] PegaProductGitHubImportTest-10.pega.rest.password=*****
+[pega:propertyfilegenerator] PegaProductGitHubImportTest-10.import.archive.path=D:\\Jenkins\\workspace\\PegaProductGitHubImportTest
+[pega:propertyfilegenerator] PegaProductGitHubImportTest-10.import.async=false
+[pega:propertyfilegenerator] PegaProductGitHubImportTest-10.import.existingInstances=override
+[pega:propertyfilegenerator] Systems Configured
+[pega:propertyfilegenerator] PegaProductGitHubImportTest-10
+[pega:propertyfilegenerator] Generated F:\EAZD\scripts\utils\generated\PegaProductGitHubImportTest-10.prpcServiceUtils.properties
+     [echo] *** JVM Arguments -XX:MaxHeapSize=1280m -XX:MaxMetaspaceSize=512m ***
+
+_callService:
+     [java] 17:50:19.993 [main] INFO  [a.pegarules.serviceclient.ClientSettings] - -action import -propFileDir F:\EAZD\scripts\utils/generated -poolSize ${prpcserviceutils.pool.size} -requestTimeOut ${prpcserviceutils.request.timeout} -tempDir C:\windows\TEMP\/PegaInstallTemp-28-August-2019-17.50.19 -artifactsDir D:\Jenkins\workspace\PegaProductGitHubImportTest\PegaProductGitHubImportTest 
+     [java] 17:50:19.997 [main] INFO  [a.pegarules.serviceclient.ClientSettings] - Setting Thread Pool Size to default 5
+     [java] 17:50:19.997 [main] INFO  [a.pegarules.serviceclient.ClientSettings] - Setting Request TimeOut to default 300
+     [java] 17:50:20.005 [main] INFO  [.pega.pegarules.serviceclient.ClientMain] - Initializing client Current Operation = IMPORT; Thread Pool Size = 5; RequestTimeOut = 300; TemporaryDirectory = C:\windows\TEMP\/PegaInstallTemp-28-August-2019-17.50.19
+     [java] 17:50:20.008 [main] INFO  [viceclient.requestmanager.RequestManager] - Initializing Request Manager
+     [java] 17:50:20.009 [main] INFO  [viceclient.requestmanager.RequestManager] - Initializing ExecutorService with pool size 5 
+     [java] 17:50:20.014 [main] INFO  [viceclient.requestmanager.RequestManager] - Performing IMPORT with params [System Name = PegaProductGitHubImportTest-10 Parameters = {hotfix.async=true, expose.includeDescendents=true, getstatus.jobID=, export.async=true, expose.async=true, expose.excludedClasses=, export.productName=, import.commitRate=100, export.branchAppContext=, expose.commitRate=100, import.existingInstances=override, user.temp.dir=C:/pega_temp, expose.reindex=true, hotfix.operation=, expose.excludeDescendents=true, pega.rest.proxy.password=*****, updateAccessGroup.applicationName=, import.nofailonerror=false, export.applicationVersion=, import.codesetVersion=06-01-01, pega.rest.proxy.username=, expose.includedClasses=, rollback.action=SystemRollback, pega.rest.server.url=http://192.168.198.1:8085/prweb/PRRestService/, updateAccessGroup.applicationVersion=, expose.startKey=, expose.reindexType=nonpega, import.codesetName=Customer, manageRestorePoints.restorePointLabel=, pega.rest.password=*****, import.async=false, import.compileLibraries=true, hotfix.force=false, export.productVersion=, rollback.restorePointName=, import.allowImportWithMissingDependencies=false, pega.rest.username=Debraj, rollback.async=true, export.branchName=, getstatus.operationName=, expose.endDate=, import.preserveOrder=true, rollback.downloadLogToFile=true, pega.rest.proxy.port=, pega.rest.proxy.workstation=, expose.endKey=, import.archive.path=D:\\Jenkins\\workspace\\PegaProductGitHubImportTest, hotfix.dlFilePath=, export.archiveName=, manageRestorePoints.restorePointName=, updateAccessGroup.groupList=, import.mode=import, expose.startDate=, expose.numOfThreads=1, manageTrackedData.operation=, hotfix.bypassSchema=false, hotfix.catalogPath=, pega.rest.proxy.domain=, import.skipBackup=false, manageRestorePoints.action=, export.applicationName=, pega.rest.response.type=json, pega.rest.proxy.host=}]
+     [java] 17:50:20.025 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'config
+     [java] 17:50:20.025 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'description
+     [java] 17:50:20.025 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'FETCH_HEAD
+     [java] 17:50:20.025 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'HEAD
+     [java] 17:50:20.026 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'applypatch-msg.sample
+     [java] 17:50:20.026 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'commit-msg.sample
+     [java] 17:50:20.026 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'post-update.sample
+     [java] 17:50:20.039 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'pre-applypatch.sample
+     [java] 17:50:20.039 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'pre-commit.sample
+     [java] 17:50:20.039 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'pre-push.sample
+     [java] 17:50:20.039 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'pre-rebase.sample
+     [java] 17:50:20.040 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'prepare-commit-msg.sample
+     [java] 17:50:20.040 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'update.sample
+     [java] 17:50:20.040 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'index
+     [java] 17:50:20.040 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'exclude
+     [java] 17:50:20.041 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'HEAD
+     [java] 17:50:20.042 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'master
+     [java] 17:50:20.042 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'bd19e4336e5727dbd981553f009e97136e8e76
+     [java] 17:50:20.043 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding '90adaa3d8965167943dbcdbd1020d15d7dc3da
+     [java] 17:50:20.043 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'b4775d2216175804bfae6e78e3693357ec11fa
+     [java] 17:50:20.043 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding '6c6598bc93d37b639d581a53145add28e12a09
+     [java] 17:50:20.044 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'b866a6ddfb7fa1da23fb5945f9cc07d711d637
+     [java] 17:50:20.044 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'deb54faac3c510c10365fc506d3791d1bbaea0
+     [java] 17:50:20.045 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'db16175ce5c72e281c2bdf965b84ce1f3061c2
+     [java] 17:50:20.045 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding '920a0c807d85f9f1cc333807454cb0afee5cc3
+     [java] 17:50:20.046 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding '39334357c8c6727189690bd3f50d2aa8569580
+     [java] 17:50:20.047 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'master
+     [java] 17:50:20.048 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'jobIds.txt
+     [java] 17:50:20.049 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'TestProduct01-01-02.log
+     [java] 17:50:20.049 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'PegaProductGitHubImportTest-10_import.properties
+     [java] 17:50:20.049 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'PegaProductGitHubImportTest-3_import.properties
+     [java] 17:50:20.050 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'PegaProductGitHubImportTest-4_import.properties
+     [java] 17:50:20.050 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'PegaProductGitHubImportTest-5_import.properties
+     [java] 17:50:20.050 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'PegaProductGitHubImportTest-6_import.properties
+     [java] 17:50:20.050 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'PegaProductGitHubImportTest-7_import.properties
+     [java] 17:50:20.050 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'PegaProductGitHubImportTest-8_import.properties
+     [java] 17:50:20.051 [pool-2-thread-1] INFO  [eclient.operation.custom.ImportOperation] - PegaProductGitHubImportTest-10:Not a valid archive (zip/jar), hence excluding 'PegaProductGitHubImportTest-9_import.properties
+     [java]  
+     [java] 17:50:20.712 [pool-2-thread-1] INFO  [.pegarules.serviceclient.rest.RestClient] - PegaProductGitHubImportTest-10: Attaching files [D:\Jenkins\workspace\PegaProductGitHubImportTest\TestProduct01-01-03.zip]
+     [java] 17:50:20.723 [pool-2-thread-1] INFO  [.pegarules.serviceclient.rest.RestClient] - PegaProductGitHubImportTest-10: Adding parameters {jsonBody={"mode":"import","async":"false","preserveOrder":"true","skipBackup":"false","codesetVersion":"06-01-01","compileLibraries":"true","allowImportWithMissingDependencies":"false","commitRate":"100","codesetName":"Customer","existingInstances":"override","nofailonerror":"false"}}
+     [java] 17:50:24.408 [pool-2-thread-1] INFO  [egarules.serviceclient.rest.RestResponse] - PegaProductGitHubImportTest-10: Parsing response
+     [java] 17:50:24.409 [pool-2-thread-1] INFO  [egarules.serviceclient.rest.RestResponse] - PegaProductGitHubImportTest-10: Parsing response of length 7970
+     [java] 17:50:24.409 [pool-2-thread-1] INFO  [egarules.serviceclient.rest.RestResponse] - PegaProductGitHubImportTest-10: Parsing content of type multipart/form-data; boundary=zgoC-flRr4_3rpP57E0f2lz88EiMxR
+     [java] 17:50:24.427 [pool-2-thread-1] INFO  [.rest.contenthandlers.FileContentHandler] - Creating file C:\windows\TEMP\PegaInstallTemp-28-August-2019-17.50.19\IMPORT_1567007420008\PegaProductGitHubImportTest-10_1\TestProduct01-01-03.log
+     [java] 17:50:24.430 [main] INFO  [viceclient.requestmanager.RequestManager] - Request on system PegaProductGitHubImportTest-10 Successful
+     [java] 
+     [java]                                    SUCCESSFUL JOBS
+     [java] --------------------------------------------------------------------------------------------
+     [java] 
+     [java] System Name         : PegaProductGitHubImportTest-10                                                                      
+     [java] Job ID              : IMPORTREQUEST-8                                                                                     
+     [java] Status              : SUCCESS                                                                                             
+     [java] Logs                : D:\Jenkins\workspace\PegaProductGitHubImportTest\PegaProductGitHubImportTest\IMPORT_2019-Aug-28_17-50-24\PegaProductGitHubImportTest-10
+     [java] --------------------------------------------------------------------------------------------
+     [java] 17:50:24.481 [main] INFO  [viceclient.requestmanager.RequestManager] - Shutting down executor service
+     [java] 17:50:24.482 [main] INFO  [viceclient.requestmanager.RequestManager] - Executor Service shutdown completed
+     [java] 17:50:24.482 [main] INFO  [.pega.pegarules.serviceclient.ClientMain] - Execution done
+
+-cleanup:
+     [echo] Cleaning up temp directory...
+   [delete] Deleting directory C:\windows\TEMP\PegaInstallTemp-28-August-2019-17.50.19
+
+performOperation:
+     [echo] PegaRULES Process Commander import complete.
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Exiting with NO Error
+

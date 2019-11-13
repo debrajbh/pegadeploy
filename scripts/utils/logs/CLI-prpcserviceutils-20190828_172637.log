@@ -1,0 +1,151 @@
+Buildfile: F:\EAZD\scripts\utils\prpcserviceutilsWrapper.xml
+     [echo] *** JVM Arguments -XX:MaxHeapSize=1280m -XX:MaxMetaspaceSize=512m ***
+
+-init:
+     [echo] ******************************************************************
+     [echo] Build date : ${pegaBuildDate.value} 
+     [echo] Pega7 platform version : ${specificationVersion.value} 
+     [echo] ******************************************************************
+   [delete] Deleting directory F:\EAZD\scripts\utils\generated
+    [mkdir] Created dir: F:\EAZD\scripts\utils\generated
+[pega:propertyparser] Reading Properties from: F:\EAZD\scripts\utils/prpcServiceUtils.properties
+[pega:propertyparser] getstatus.jobID=
+[pega:propertyparser] hotfix.async=true
+[pega:propertyparser] expose.includeDescendents=true
+[pega:propertyparser] export.async=true
+[pega:propertyparser] expose.async=true
+[pega:propertyparser] expose.excludedClasses=
+[pega:propertyparser] import.commitRate=100
+[pega:propertyparser] export.productName=
+[pega:propertyparser] export.branchAppContext=
+[pega:propertyparser] expose.commitRate=100
+[pega:propertyparser] import.existingInstances=skip
+[pega:propertyparser] user.temp.dir=C:/pega_temp
+[pega:propertyparser] expose.reindex=true
+[pega:propertyparser] hotfix.operation=
+[pega:propertyparser] expose.excludeDescendents=true
+[pega:propertyparser] updateAccessGroup.applicationName=
+[pega:propertyparser] import.nofailonerror=false
+[pega:propertyparser] pega.rest.proxy.password=*****
+[pega:propertyparser] import.codesetVersion=06-01-01
+[pega:propertyparser] export.applicationVersion=
+[pega:propertyparser] pega.rest.proxy.username=
+[pega:propertyparser] expose.includedClasses=
+[pega:propertyparser] rollback.action=SystemRollback
+[pega:propertyparser] pega.rest.server.url=http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+[pega:propertyparser] updateAccessGroup.applicationVersion=
+[pega:propertyparser] expose.startKey=
+[pega:propertyparser] expose.reindexType=nonpega
+[pega:propertyparser] import.codesetName=Customer
+[pega:propertyparser] manageRestorePoints.restorePointLabel=
+[pega:propertyparser] import.async=true
+[pega:propertyparser] pega.rest.password=*****
+[pega:propertyparser] hotfix.force=false
+[pega:propertyparser] import.compileLibraries=true
+[pega:propertyparser] rollback.restorePointName=
+[pega:propertyparser] import.allowImportWithMissingDependencies=false
+[pega:propertyparser] export.productVersion=
+[pega:propertyparser] pega.rest.username=
+[pega:propertyparser] rollback.async=true
+[pega:propertyparser] export.branchName=
+[pega:propertyparser] getstatus.operationName=
+[pega:propertyparser] expose.endDate=
+[pega:propertyparser] import.preserveOrder=true
+[pega:propertyparser] rollback.downloadLogToFile=true
+[pega:propertyparser] pega.rest.proxy.port=
+[pega:propertyparser] pega.rest.proxy.workstation=
+[pega:propertyparser] expose.endKey=
+[pega:propertyparser] hotfix.dlFilePath=
+[pega:propertyparser] import.archive.path=
+[pega:propertyparser] updateAccessGroup.groupList=
+[pega:propertyparser] manageRestorePoints.restorePointName=
+[pega:propertyparser] export.archiveName=
+[pega:propertyparser] import.mode=import
+[pega:propertyparser] expose.startDate=
+[pega:propertyparser] hotfix.bypassSchema=false
+[pega:propertyparser] manageTrackedData.operation=
+[pega:propertyparser] expose.numOfThreads=1
+[pega:propertyparser] hotfix.catalogPath=
+[pega:propertyparser] manageRestorePoints.action=
+[pega:propertyparser] import.skipBackup=false
+[pega:propertyparser] pega.rest.proxy.domain=
+[pega:propertyparser] export.applicationName=
+[pega:propertyparser] pega.rest.response.type=json
+[pega:propertyparser] pega.rest.proxy.host=
+    [mkdir] Created dir: C:\windows\TEMP\PegaInstallTemp-28-August-2019-17.26.39
+[pega:hasenoughspace] Found 61701764KB of free space on 'C:\windows\TEMP\'
+
+-processInstances:
+     [echo] Performing import on multiple instance(s)
+[pega:echoargline] arg line : -action import -propFileDir F:\EAZD\scripts\utils/generated -poolSize ${prpcserviceutils.pool.size} -requestTimeOut ${prpcserviceutils.request.timeout} -tempDir C:\windows\TEMP\/PegaInstallTemp-28-August-2019-17.26.39 -artifactsDir F:\Pega_Archive
+     [echo] Reading connection information from D:\Jenkins\workspace\PegaProductGitHubImportTest\PegaProductGitHubImportTest-5_export.properties
+[pega:propertyfilegenerator] pega.rest.server.url=http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+[pega:propertyfilegenerator] pega.rest.username=
+[pega:propertyfilegenerator] pega.rest.password=*****
+[pega:propertyfilegenerator] pega.rest.proxy.host=
+[pega:propertyfilegenerator] pega.rest.proxy.port=
+[pega:propertyfilegenerator] pega.rest.proxy.username=
+[pega:propertyfilegenerator] pega.rest.proxy.password=*****
+[pega:propertyfilegenerator] pega.rest.proxy.domain=
+[pega:propertyfilegenerator] pega.rest.proxy.workstation=
+[pega:propertyfilegenerator] pega.rest.response.type=json
+[pega:propertyfilegenerator] user.temp.dir=C:/pega_temp
+[pega:propertyfilegenerator] export.archiveName=
+[pega:propertyfilegenerator] export.productName=
+[pega:propertyfilegenerator] export.productVersion=
+[pega:propertyfilegenerator] export.applicationVersion=
+[pega:propertyfilegenerator] export.applicationName=
+[pega:propertyfilegenerator] export.branchName=
+[pega:propertyfilegenerator] export.branchAppContext=
+[pega:propertyfilegenerator] export.async=true
+[pega:propertyfilegenerator] expose.includedClasses=
+[pega:propertyfilegenerator] expose.includeDescendents=true
+[pega:propertyfilegenerator] expose.excludedClasses=
+[pega:propertyfilegenerator] expose.excludeDescendents=true
+[pega:propertyfilegenerator] expose.startKey=
+[pega:propertyfilegenerator] expose.endKey=
+[pega:propertyfilegenerator] expose.startDate=
+[pega:propertyfilegenerator] expose.endDate=
+[pega:propertyfilegenerator] expose.reindex=true
+[pega:propertyfilegenerator] expose.reindexType=nonpega
+[pega:propertyfilegenerator] expose.commitRate=100
+[pega:propertyfilegenerator] expose.numOfThreads=1
+[pega:propertyfilegenerator] expose.async=true
+[pega:propertyfilegenerator] import.archive.path=
+[pega:propertyfilegenerator] import.mode=import
+[pega:propertyfilegenerator] import.existingInstances=skip
+[pega:propertyfilegenerator] import.nofailonerror=false
+[pega:propertyfilegenerator] import.commitRate=100
+[pega:propertyfilegenerator] import.compileLibraries=true
+[pega:propertyfilegenerator] import.allowImportWithMissingDependencies=false
+[pega:propertyfilegenerator] import.preserveOrder=true
+[pega:propertyfilegenerator] import.codesetName=Customer
+[pega:propertyfilegenerator] import.codesetVersion=06-01-01
+[pega:propertyfilegenerator] import.async=true
+[pega:propertyfilegenerator] import.skipBackup=false
+[pega:propertyfilegenerator] manageTrackedData.operation=
+[pega:propertyfilegenerator] hotfix.operation=
+[pega:propertyfilegenerator] hotfix.dlFilePath=
+[pega:propertyfilegenerator] hotfix.catalogPath=
+[pega:propertyfilegenerator] hotfix.bypassSchema=false
+[pega:propertyfilegenerator] hotfix.force=false
+[pega:propertyfilegenerator] hotfix.async=true
+[pega:propertyfilegenerator] getstatus.jobID=
+[pega:propertyfilegenerator] getstatus.operationName=
+[pega:propertyfilegenerator] manageRestorePoints.action=
+[pega:propertyfilegenerator] manageRestorePoints.restorePointName=
+[pega:propertyfilegenerator] manageRestorePoints.restorePointLabel=
+[pega:propertyfilegenerator] rollback.restorePointName=
+[pega:propertyfilegenerator] rollback.action=SystemRollback
+[pega:propertyfilegenerator] rollback.async=true
+[pega:propertyfilegenerator] rollback.downloadLogToFile=true
+[pega:propertyfilegenerator] updateAccessGroup.applicationName=
+[pega:propertyfilegenerator] updateAccessGroup.applicationVersion=
+[pega:propertyfilegenerator] updateAccessGroup.groupList=
+
+BUILD FAILED
+F:\EAZD\scripts\utils\prpcserviceutilsWrapper.xml:179: Connection Property file D:\Jenkins\workspace\PegaProductGitHubImportTest\PegaProductGitHubImportTest-5_export.properties is not a valid file
+
+Total time: 1 second
+Exiting with Error
+
