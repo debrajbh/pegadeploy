@@ -1,4 +1,0 @@
-#SUCCESSFUL JOBS
-#Wed Sep 04 19:00:12 CEST 2019
-PegaProductExportTest-15.jobID=EXPORTREQUEST-7
-PegaProductExportTest-15.operationName=export
